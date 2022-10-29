@@ -2,7 +2,7 @@ version: "3.2"
 services:
   api:
     image: flask_api
-    container_name: ml_api
+    container_name: shot_type_api
     build:
       context: ./api
       target: build
@@ -23,7 +23,7 @@ services:
     image: redis:6.2.6
 
   model:
-    image: ml_service
+    image: shot_type_service
     build:
       context: ./model
       target: build
