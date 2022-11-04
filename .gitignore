@@ -11,6 +11,8 @@ __pycache__/
 *.so
 
 dataset
+data
+embeddings
 
 # Distribution / packaging
 .Python
