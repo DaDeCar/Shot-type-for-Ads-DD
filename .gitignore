@@ -16,6 +16,7 @@ data
 embeddings
 
 notebooks/roof.ipynb
+embeddings
 
 # Distribution / packaging
 .Python
