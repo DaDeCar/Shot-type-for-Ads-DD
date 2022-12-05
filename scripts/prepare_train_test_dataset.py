@@ -83,7 +83,7 @@ def main(data_folder, labels, output_data_folder):
                 path_video = f"{data_folder}/{id_movie}/shot_{id_shot}.mp4"
                 path_dir_dest = f"{output_data_folder}/{dest_type}"
                 if not os.path.exists(path_dir_dest):
-                    os.makedirs(path_dir_dest)
+                    os.makedirs(path_dir_dest, exist_ok=True)
                 path_video_dest = f"{path_dir_dest}/shot_{id_movie}_{id_shot}.mp4"
                 os.link(path_video, path_video_dest)
                
