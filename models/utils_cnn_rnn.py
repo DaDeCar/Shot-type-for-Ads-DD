@@ -10,8 +10,6 @@ import cv2
 
 
 
-TRAIN_TEST_DATA_FOLDER = 'trailer_v2'
-
 IMG_SIZE = 224
 BATCH_SIZE = 64
 MAX_SEQ_LENGTH = 30
