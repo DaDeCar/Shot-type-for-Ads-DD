@@ -1,4 +1,4 @@
-SHOT TYPE CLASIFFICATION FOR ADS
+_*SHOT TYPE CLASIFFICATION FOR ADS*_
 
 Industries: adtech, marketing, content production and distribution
 
@@ -9,8 +9,7 @@ This project is about classifying shot types from two main groups:
 (b) Shot Movement.
 
 
-
-reference
+https://github.com/DaDeCar/final-project-shot-type/blob/570b293e1670c551fed6d8db33600ad298e782ac/Final_report/images/types_of_Shots.jpg
 
 
 Inside Shot scale, we have five categories:
@@ -44,7 +43,7 @@ zooms out for pull shot.
 
 
 
-To solve the project we used two models:
+Finally, to solve the project we used two models:
 
  a. CNN 2D + RNN
 
