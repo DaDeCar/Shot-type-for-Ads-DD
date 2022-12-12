@@ -314,6 +314,18 @@ def create_cnn3d_model():
     return model
 
 
+def softmax(z):
+    assert len(z.shape) == 2
+
+
+    s = np.max(z, axis=1)
+    s = s[:, np.newaxis] # necessary step to do broadcasting
+    e_x = np.exp(z - s)
+    div = np.sum(e_x, axis=1)
+    div = div[:, np.newaxis] # dito
+    return e_x / div
+
+
 
 
 def sequence_prediction(video_path,n_frames, cnn3d_model):
@@ -332,7 +344,8 @@ def sequence_prediction(video_path,n_frames, cnn3d_model):
     # append dimension to batch size
     exp_frames = np.expand_dims(frames, axis=0)
     # making prediction
-    probabilities = cnn3d_model.predict(exp_frames)
+    predicted_values = cnn3d_model.predict(exp_frames)
+    probabilities = softmax(predicted_values)
     #delivering result
     result = {}
     for i in np.argsort(probabilities)[0][::-1]:
