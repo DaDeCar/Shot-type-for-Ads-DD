@@ -1,4 +1,4 @@
-# *SHOT TYPE CLASIFFICATION FOR ADS*
+# *SHOT TYPE CLASSIFICATION FOR ADS*
 
 ## Industries: adtech, marketing, content production and distribution
 
